@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dish-types",
+      "handler": "dish-types.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dish-types/count",
+      "handler": "dish-types.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dish-types/:id",
+      "handler": "dish-types.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dish-types",
+      "handler": "dish-types.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dish-types/:id",
+      "handler": "dish-types.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dish-types/:id",
+      "handler": "dish-types.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dish_types",
+  "info": {
+    "name": "Dish Types"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "dishes": {
+      "via": "dish_type",
+      "collection": "dishes"
+    }
+  }
+}

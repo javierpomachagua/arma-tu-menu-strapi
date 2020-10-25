@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ingredients",
+  "info": {
+    "name": "Ingredients"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "unit_type": {
+      "type": "enumeration",
+      "enum": [
+        "kg",
+        "unidad",
+        "gr",
+        "caja"
+      ]
+    },
+    "ingredient_id": {
+      "via": "ingredient",
+      "collection": "dish-ingredient"
+    }
+  }
+}

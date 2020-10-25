@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dish-ingredients",
+      "handler": "dish-ingredient.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dish-ingredients/count",
+      "handler": "dish-ingredient.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dish-ingredients/:id",
+      "handler": "dish-ingredient.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dish-ingredients",
+      "handler": "dish-ingredient.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dish-ingredients/:id",
+      "handler": "dish-ingredient.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dish-ingredients/:id",
+      "handler": "dish-ingredient.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

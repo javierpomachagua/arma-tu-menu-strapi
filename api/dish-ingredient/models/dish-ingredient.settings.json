@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dish_ingredients",
+  "info": {
+    "name": "Dish Ingredient"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "dish": {
+      "model": "dishes",
+      "via": "dish_id"
+    },
+    "ingredient": {
+      "model": "ingredients",
+      "via": "ingredient_id"
+    },
+    "units": {
+      "type": "decimal"
+    }
+  }
+}
