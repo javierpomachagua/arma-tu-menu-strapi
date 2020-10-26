@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "ingredients",
   "info": {
-    "name": "Ingredients"
+    "name": "Ingredients",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -28,9 +29,9 @@
         "caja"
       ]
     },
-    "ingredient_id": {
-      "via": "ingredient",
-      "collection": "dish-ingredient"
+    "dishes": {
+      "collection": "dish-ingredient",
+      "via": "ingredient"
     }
   }
 }

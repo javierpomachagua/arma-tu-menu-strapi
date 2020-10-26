@@ -10,16 +10,16 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "dish": {
-      "model": "dishes",
-      "via": "dish_id"
-    },
-    "ingredient": {
-      "model": "ingredients",
-      "via": "ingredient_id"
-    },
     "units": {
       "type": "decimal"
+    },
+    "dish": {
+      "via": "ingredients",
+      "model": "dishes"
+    },
+    "ingredient": {
+      "via": "dishes",
+      "model": "ingredients"
     }
   }
 }
